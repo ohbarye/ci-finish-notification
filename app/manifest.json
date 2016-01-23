@@ -1,0 +1,21 @@
+{
+  "manifest_version": 1,
+  "name": "CI Finish Notifier",
+  "description": "This notifies you that CI finished with JavaScript alert.",
+  "version": "0.1.0",
+  "author": "ohbarye",
+  "icons": {
+    "128": "images/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/pulls*",
+        "https://github.com/*/pull/*",
+      ],
+      "js": [
+        "js/app.js"
+      ]
+    }
+  ]
+}
